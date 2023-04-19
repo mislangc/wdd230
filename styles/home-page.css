@@ -40,7 +40,7 @@
     border-bottom-color: black;
 }
 #assignment-list li {
-    width: 25%;
+    width: 100%;
     background-color: white;
     font-size: 3vh;
     margin: 10px;
