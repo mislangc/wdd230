@@ -1,0 +1,51 @@
+header {
+    background-color: rgb(240, 86, 41);
+    color: white;
+    padding: 0.75em;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 2px 2px 5px black;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main .principles {
+    margin: 1em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px 10px 0px 0px;
+}
+.principles img {
+    max-width: 100%;
+    width: 85%;
+    max-height: 100%;
+    display: block;
+    margin: 1em;
+}
+main .principles h1 {
+    padding: 0.2em;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 10px 10px 0 0;
+    margin-top: 0;
+    background-color: rgb(240, 86, 41);
+}
+main .principles h2, div, img, p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.principles div, img, p {
+    margin: 0.8em;
+}
+.principles h2 {
+    margin: 0.5em;
+}
+footer {
+    background-color: rgb(240, 86, 41);
+    color: white;
+    text-align: center;
+    padding: 0.25em;
+    font-family: 'Orbitron', sans-serif;
+}

@@ -1,0 +1,24 @@
+@media only screen and (max-width: 32.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    main .principles {
+        width: 95%;
+    }
+    #first-principle {
+        grid-column: 1/2;
+    }
+    #second-principle {
+        grid-column: 2/3;
+    }
+    #third-principle {
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    .principles img {
+        width: 85%;
+    }
+    #third-principle img {
+        width: 90%;
+    }
+}
