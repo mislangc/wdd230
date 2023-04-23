@@ -16,7 +16,7 @@
 }
 #profile-section h1 {
     grid-column: 2/3;
-    width: fit-content;
+    width: 100%;
     margin: auto;
     font-size: 8vh;
     color: white;
