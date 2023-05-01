@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+h1, h2 {
+    font-family: 'Roboto Slab', sans-serif;
+}
+p {
+    font-family: 'Montserrat', serif;
+}
+#header-nav {
+    margin: 2em;
+}
+#header-nav a {
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    margin: 4em;
+    text-decoration: none;
+    color: black;
+}
+#header-nav a:hover {
+    color: #31c48d;
+}

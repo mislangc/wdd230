@@ -1,0 +1,74 @@
+body {
+    text-align: center;
+}
+#header-nav {
+    margin: 2em;
+}
+#header-nav a {
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    margin: 4em;
+    text-decoration: none;
+    color: black;
+}
+#header-nav a:hover {
+    color: #31c48d;
+}
+#color-schema {
+    margin: 4em;
+}
+#color-schema a{
+    margin: 1em;
+    padding: 3em;
+    border-style: solid;
+}
+#primary-color {
+    background-color: #31c48d;
+}
+#secondary-color {
+    background-color: #adbfb8;
+}
+#accent-one {
+    background-color: white;
+}
+#accent-two {
+    background-color: black;
+    color: white;
+}
+#accent-three {
+    background-color: #6bd4ad;
+}
+#nav-bar a{
+    color: black;
+    font-family:'Montserrat', serif;
+    margin: 5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+#nav-bar a:hover {
+    color: #31c48d;
+}
+#normal-paragraph, #colored-paragraph, #colored-paragraph-two {
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    font-family: 'Montserrat', serif;
+}
+#colored-paragraph {
+    background-color: #31c48d;
+    color: white;
+}
+#colored-paragraph-two {
+    background-color: #adbfb8;
+    margin-top: 1em;
+    color: black;
+}
+footer div{
+    background-color: #31c48d;
+    padding: 1em;
+    color: white;
+    font-family: 'Montserrat', serif;
+}
+h1, h2, h3 {
+    font-family: 'Roboto Slab', sans-serif;
+}
