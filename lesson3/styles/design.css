@@ -1,6 +1,9 @@
 body {
     text-align: center;
 }
+img {
+    max-width: 100%;
+}
 #header-nav {
     margin: 2em;
 }
@@ -21,6 +24,7 @@ body {
     margin: 1em;
     padding: 3em;
     border-style: solid;
+    display: inline-block;
 }
 #primary-color {
     background-color: #31c48d;
@@ -68,6 +72,8 @@ footer div{
     padding: 1em;
     color: white;
     font-family: 'Montserrat', serif;
+    max-width: 75%;
+    margin: auto;
 }
 h1, h2, h3 {
     font-family: 'Roboto Slab', sans-serif;

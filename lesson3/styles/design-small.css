@@ -1,0 +1,14 @@
+@media only screen and (max-width: 32.5em) {
+    #nav-bar a{
+        display: block;
+    }
+    #color-schema a{
+        display: block;
+        width: 25%;
+        margin: auto;
+        margin-top: 1em;
+    }
+    #header-nav a {
+        display: block;
+    }
+}

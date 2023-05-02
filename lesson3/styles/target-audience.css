@@ -1,11 +1,21 @@
 body {
     text-align: center;
 }
+main {
+    max-width: 75%;
+    margin: auto;
+}
+img {
+    max-width: 100%;
+}
 h1, h2 {
     font-family: 'Roboto Slab', sans-serif;
 }
 p {
     font-family: 'Montserrat', serif;
+    width: 60%;
+    margin: auto;
+    margin-top: 2em;
 }
 #header-nav {
     margin: 2em;
