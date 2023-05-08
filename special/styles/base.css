@@ -8,6 +8,7 @@ h1, h2, h3 {
     text-align: center;
 }
 h1 {
+    margin: 1em;
     color: white;
     font-size: 3em;
 }
@@ -27,15 +28,14 @@ img {
 section {
     margin: 1.5em;
     background-color: green;
-    padding: 5em;
+    padding: 2em;
     margin-top: 5em;
     border-radius: 25px;
 }
 p {
-    margin: 1em;
+    margin: 0.4em;
     font-family: "Montserrat", serif;
     background-color: orange;
     padding: 2em;
     text-align: center;
-    font-size: large;
 }
