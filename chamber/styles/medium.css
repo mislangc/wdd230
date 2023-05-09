@@ -1,34 +1,57 @@
 @media only screen and (min-width: 35rem) {
-    #upper-nav {
-        display: flex;
-        justify-content: space-around;
-        height: 50px;
-        align-items: center;
-        padding: 1rem;
+    #hamburger {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2em;
+    }
+    #social {
+        margin-left: 5em;
+    }
+    #social img {
+        width: 40%;
     }
     #logo {
-        width: 50%;
+        margin-left: 5em;
+        margin-top: 2em;
+        margin-right: 2em;
     }
-    #social img{
-        padding: 0;
-        width: 20px;
-    }
-    #hamburger {
-        border: 1px solid gray;
-        padding: 0.2em;
-        background-color: lightgray;
-        font-size: 1.2rem;
-    }
-    #primaryNav a{
-        text-decoration: none;
-        color: black;
-        font-family: "Montserrat", sans-serif;
-    }
-    #upper-nav nav {
-        display: none;
-    }
-    #upper-nav nav.open {
+    /*main*/
+    #join {
         display: block;
-        background-color: gray;
+        grid-area: join;
+    }
+    #spotlights {
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+    }
+    #spotlights div {
+        flex: 1;
+    }
+    /*main*/
+    main {
+        grid-template-areas: 
+        "hero hero hero"
+        "news news news"
+        "spotlights spotlights spotlights"
+        "join join join"
+        "event event weather";
+        
+    }
+
+    /*footer*/
+    #upper-footer {
+        display: grid;
+        grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+        place-items: center;
+    }
+    #upper-footer img{
+        grid-column: 1/2;
+    }
+    #address {
+        grid-column: 2/3;
+    }
+    #more-info {
+        grid-column: 4/5;
     }
 }

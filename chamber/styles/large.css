@@ -1,159 +1,57 @@
 @media only screen and (min-width: 64rem) {
-    body {
-        width: 95%;
-        margin: auto;
+    #hamburger {
+        display: none;
     }
-    main {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        width: 90%;
-        margin: auto;
+    #logo {
+        width: 24rem;
+        margin: 2em;
     }
-    main div {
-        background-color: rgb(235, 233, 233);
-        font-style: italic;
-        font-family: sans-serif;
-        padding: 1em;
-        border-style: solid;
-        border-color: lightgray;
-        border-width: thin; 
-        margin: 10px;
+    #social {
+        width: 20em;
+        margin-right: 5%;
     }
-    #event {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    #weather {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    #join {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    #hero {
-        grid-column: 2/3;
-        grid-row: 1/3;
-    }
-    #new {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    #spotlights {
-        grid-column: 3/4;
-        grid-row: 1/4;
-    }
-    #spotlights section {
-        border-style: solid;
-        border-width: thin;
-        border-color: lightgray;
-        height: 15em;
-    }
-
-    header {
+    #upper-nav nav#primaryNav {
+        gap: 5%;
+        justify-content: center;
         display: flex;
-        flex-direction: column;
-        max-width: 100%;
+        flex-direction: row;
     }
-    #upper-nav img {   
-        max-height: 100%;
-        max-width: 100%;
-        border-right: 1px solid black;
-        padding-right: 2em;
+    #primaryNav a:hover {
+        color: #31c48d;
+        background-color: white;
+    }
+    #primaryNav a {
+        border: none;
+    }
+    #primaryNav a:first-child {
+        border-top: none;
     }
     #upper-nav {
         display: flex;
-        margin-bottom: 2em;
-        border: 1px solid black;
-        padding: 2em;
-
     }
-    #upper-nav nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #upper-nav nav a{
-        flex: 1;
-        text-align: center;
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-family: "Montserrat", serif;
+    /*main*/
+    #spotlight3 {
         display: block;
-        padding: 3em;
-        float: right;
     }
-    #upper-nav nav a:hover {
-        color:#31c48d;
-        transition: 0.2s;
-        transform: scale(1.3);
+    #spotlights {
+        flex-direction: column;
     }
-    #social {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-        border-left: 1px solid black;
+    main {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "event hero hero spotlights"
+        "weather hero hero spotlights"
+        "join news news spotlights";
     }
-    #social a {
-        margin: 1em;
-    }
-    #social a:hover {
-        transition: 0.3s;
-        transform: scale(1.2);
-    }
-    #date-today {
-        border-radius: 25px;
-        width: 95%;
-        background-color: #31c48d;
-        text-align: center;
-        margin: auto;
-        padding: 1em;
-        color: black;
-        font-weight: bold;
-        font-family: "Montserrat", serif;
-        border: 1px solid black;
-    }
-    footer {
-        border: 1px solid black;
-        width: 95%;
-        margin: auto;
-    }
+    /*footer*/
     #upper-footer {
         display: flex;
-        padding: 2em;
-        width: 85%;
-        margin: auto;
-        font-family: "Montserrat", serif;
-    }#upper-footer img {
-        height: 25%;
-        max-width: 100%;
-        max-height: 100%;
     }
-    #address {
-        margin: 1em;
-    }
-    #address strong {
-        font-family: 'Roboto Slab', sans-serif;
-        font-size: larger;
-    }
-    #upper-footer #address, #more-info{
-        flex: 1;
+    #upper-footer img {
+        margin-left: 10em;
     }
     #more-info {
-        text-align: center;
-        border-radius: 25px;
+        flex: 1;
     }
-    #lower-footer {
-        margin: auto;
-        padding: 0.5em;
-        border-top: 1px solid black;
-        text-align: center;
-        font-family: "Montserrat", serif;
-        background-color: #31c48d;
-        color: black;
-        font-weight: bold;
-    }
+
 }
