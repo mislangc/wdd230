@@ -1,3 +1,34 @@
-@media only screen and (max-width: 768px) {
-
+@media only screen and (min-width: 35rem) {
+    #upper-nav {
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        align-items: center;
+        padding: 1rem;
+    }
+    #logo {
+        width: 50%;
+    }
+    #social img{
+        padding: 0;
+        width: 20px;
+    }
+    #hamburger {
+        border: 1px solid gray;
+        padding: 0.2em;
+        background-color: lightgray;
+        font-size: 1.2rem;
+    }
+    #primaryNav a{
+        text-decoration: none;
+        color: black;
+        font-family: "Montserrat", sans-serif;
+    }
+    #upper-nav nav {
+        display: none;
+    }
+    #upper-nav nav.open {
+        display: block;
+        background-color: gray;
+    }
 }

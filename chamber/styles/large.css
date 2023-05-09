@@ -1,4 +1,4 @@
-
+@media only screen and (min-width: 64rem) {
     body {
         width: 95%;
         margin: auto;
@@ -156,3 +156,4 @@
         color: black;
         font-weight: bold;
     }
+}
