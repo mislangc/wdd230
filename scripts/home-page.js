@@ -1,7 +1,7 @@
 const d = new Date();
 const year = d.getFullYear();
 
-const copyright_message = ` ${year} .:|:. Carl Benedcit P. Mislang .:|:. Philippines`;
+const copyright_message = ` ${year} .:|:. Carl Benedict P. Mislang .:|:. Philippines`;
 document.querySelector("#copyright").textContent += copyright_message;
 
 const date = d.getDate();
