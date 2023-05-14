@@ -60,7 +60,7 @@ img {
 }
 #colored-paragraph {
     background-color: #31c48d;
-    color: white;
+    color: black;
 }
 #colored-paragraph-two {
     background-color: #adbfb8;
@@ -70,7 +70,7 @@ img {
 footer div{
     background-color: #31c48d;
     padding: 1em;
-    color: white;
+    color: black;
     font-family: 'Montserrat', serif;
     max-width: 75%;
     margin: auto;
