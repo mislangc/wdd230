@@ -60,4 +60,47 @@
         flex: 1;
     }
 
+    /*week 5 chamber of commerce continued*/
+    main div {
+        margin: .5rem;
+    }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    /*hero div*/
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+    #hero button {
+        font-size: 2rem;
+    }
+    /*weather div*/
+
+    #weather {
+        margin-right: auto;
+        margin-left: 10px;
+        width: 91%;
+    }
+    #weather img {
+        max-width: 40%;
+        margin-left: 10%;
+    }
+    #weather-temperature {
+        margin-right: 5%;
+    }
+
+    /*spotlights div*/
+
+    #spotlights {
+        width: min-content;
+    }
+    .spotlight h2 {
+        font-size: .9rem;
+    }
+    #spotlight1 img {
+        width: 25%;
+    }
+    
 }

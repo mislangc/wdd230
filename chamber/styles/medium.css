@@ -54,4 +54,34 @@
     #more-info {
         grid-column: 4/5;
     }
-}
+
+    /*week 5 chamber of commerce website continued*/
+
+    /*Join div*/
+    #join {
+        background-color: #adbfb8;
+        padding: 1rem;
+    }
+    #join button {
+        font-family: "Roboto Slab", sans-serif;
+        padding: 1rem;
+        background-color: #31c48d;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 100%;
+    }
+    #join p {
+        font-family: "Montserrat", serif;
+        text-align: center;
+    }
+
+    /*Weather div*/
+    #weather {
+        margin-left: auto;
+        margin-right: 0;
+        width: 90%;
+    }
+    #weather-temperature {
+        font-size: 2rem;
+    }
+}   
