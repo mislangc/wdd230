@@ -53,6 +53,9 @@
 #primaryNav.open {
     display: block;
 }
+#active {
+    background-color: #31c48d;
+}
 #date-today {
     font-family: "Montserrat", serif;
     text-align: center;
@@ -286,4 +289,34 @@ main div {
     font-family: "Montserrat", sans-serif;
     padding: 1rem;
     display: none;
+}
+
+/*DISCOVER PAGE*/
+/*Main*/
+
+#last-visit {
+    background-color: #adbfb8;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+#discover-main div {
+    background-color: #adbfb8;
+}
+#discover-main img {
+    max-width: 100%;
+
+}
+#discover-main h1 {
+    box-shadow: 5px 5px 10px black;
+    background-color: #31c48d;
+    margin-bottom: 1rem;
+}
+#discover-main h1, #discover-main div h2 {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+}
+#discover-main div p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 1rem;
 }

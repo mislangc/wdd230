@@ -84,4 +84,17 @@
     #weather-temperature {
         font-size: 2rem;
     }
+
+    /*Discover Page*/
+    #discover-main {
+        display: block;
+    }
+    #discover-main div {
+        padding-top: .1rem;
+        padding-bottom: .1rem;
+    }
+    #discover-main div img:hover {
+        transform: scale(1.05);
+        transition: 1s;
+    }
 }   

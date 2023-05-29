@@ -32,6 +32,9 @@
     #primaryNav a:first-child {
         border-top: none;
     }
+    #active {
+        border-radius: 5px 20px 20px 5px;
+    }
     #upper-nav {
         display: flex;
     }
@@ -103,4 +106,9 @@
         width: 25%;
     }
     
+    /*Discover Page*/
+    #discover-main div {
+        display: flex;
+        flex-direction: column;
+    }
 }
