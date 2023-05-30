@@ -304,7 +304,12 @@ main div {
 }
 #discover-main img {
     max-width: 100%;
-
+    filter: blur(0em);
+    transition: filter 1s;
+}
+#discover-main div img[data-src] {
+    filter: blur(0.2em);
+    
 }
 #discover-main h1 {
     box-shadow: 5px 5px 10px black;

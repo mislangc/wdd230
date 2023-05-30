@@ -14,6 +14,8 @@ if ('IntersectionObserver' in window) {
           observer.unobserve(item.target);
         }
       });
+    }, {
+        rootMargin: "-150px",
     });
     imagesToLoad.forEach((img) => {
       observer.observe(img);

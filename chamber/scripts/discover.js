@@ -29,3 +29,34 @@ if (localStorage.getItem("lastVisitDate") != 0) {
 const date = new Date();
 localStorage.setItem("lastVisitDate", date);
 
+//Week 7: Intersection Obersever / Lazy Loading
+
+const imagesToLoad = document.querySelectorAll("[data-src]");
+
+function loadImages(img) {
+    img.setAttribute("src", img.getAttribute("data-src"));
+    img.onload = () => {
+        img.removeAttribute("data-src");
+    };
+
+};
+
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      });
+    }, {
+        threshold: 0.2,
+    });
+    imagesToLoad.forEach((img) => {
+      observer.observe(img);
+    });
+  } else {
+    imagesToLoad.forEach((img) => {
+      loadImages(img);
+    });
+  }
