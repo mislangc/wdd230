@@ -1,0 +1,41 @@
+table {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+}
+caption {
+    caption-side: bottom;
+    font-size: smaller;
+}
+thead tr:nth-child(2) {
+    color: white;
+    background-color: rgb(65, 64, 64);
+}
+thead tr:nth-child(2) th {
+    border: 1px solid rgb(44, 44, 44);
+}
+thead tr th:first-child {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+thead th {
+    padding: 15px 15px;
+}
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+tbody td, tbody th {
+    border: 1px solid gainsboro;
+    padding: 7px 15px;
+}
+td {
+    text-align: center;
+}
+tbody tr:first-child td, tr:nth-child(2) td:nth-child(3), tr:nth-child(2) td:nth-child(4), tr:nth-child(3) td:nth-child(4){
+    color: purple;
+    font-weight: bolder;   
+}
+tbody tr:nth-child(2) td:nth-child(2), tr:nth-child(3) td:nth-child(2), tr:nth-child(3) td:nth-child(3){
+    color: red;
+    font-weight: bolder;
+}
