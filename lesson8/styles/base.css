@@ -13,7 +13,7 @@ thead tr:nth-child(2) {
 thead tr:nth-child(2) th {
     border: 1px solid rgb(44, 44, 44);
 }
-thead tr th:first-child {
+thead tr th:first-child, thead tr td {
     color: white;
     background-color: black;
     border: 1px solid black;
@@ -22,7 +22,7 @@ thead th {
     padding: 15px 15px;
 }
 tbody tr:nth-child(even) {
-    background-color: lightgray;
+    background-color: rgb(231, 231, 231);
 }
 tbody td, tbody th {
     border: 1px solid gainsboro;
@@ -36,6 +36,6 @@ tbody tr:first-child td, tr:nth-child(2) td:nth-child(3), tr:nth-child(2) td:nth
     font-weight: bolder;   
 }
 tbody tr:nth-child(2) td:nth-child(2), tr:nth-child(3) td:nth-child(2), tr:nth-child(3) td:nth-child(3){
-    color: red;
+    color: rgb(184, 29, 29);
     font-weight: bolder;
 }
