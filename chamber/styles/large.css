@@ -131,4 +131,23 @@
         display: flex;
         flex-direction: column;
     }
+    /* --------------------- Join Page --------------------- */
+    #business-info-fieldset {
+        display: grid;  
+    }
+    .member-benefits {
+        display: block;
+    }
+    .member-benefits h2 {
+        font-family: "Roboto Slab", serif;
+    }
+    .member-benefits li {
+        font-family: "Montserrat", sans-serif;
+    }
+    #join-main form fieldset:nth-child(2) div:nth-child(3) {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
