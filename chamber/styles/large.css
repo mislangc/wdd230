@@ -149,5 +149,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
+    /* ------------------ Week 9: Directory Page ---------------*/
+    #directory-main div.list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+    }
+    #directory-main div.list section p:nth-child(4) {
+        text-align: center;
+    }
 }

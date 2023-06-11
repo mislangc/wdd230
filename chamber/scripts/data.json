@@ -1,0 +1,67 @@
+{
+    "company" : [
+        {
+            "name" : "Kentucky Fried Chicken",
+            "address" : "2/F Unit 215 217, SM City Tarlac, McArthur Highway, Brgy San Roque, Tarlac, Tarlac, 2300",
+            "phonenumber" : "+63 917 884 5359",
+            "weburl" : "https://stores.kfc.com.ph/kfc-kfc-sm-tarlac-fast-food-restaurant-brgy-san-roque-tarlac-90572/Home",
+            "imageurl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/KFC_Logo.svg/2560px-KFC_Logo.svg.png"
+        },
+        {
+            "name" : "Jelexie Bakeshop",
+            "address" : "Cut-Cut 1st Tarlac City",
+            "phonenumber" : "+63 0998 842 5935",
+            "weburl" : "http://www.jelexie.net/",
+            "imageurl" : "http://www.jelexie.net/assets/img/logo-min-2.png" 
+        },
+        {
+            "name" : "Metrobank",
+            "address" : "Sto. Cristo, McArthur Highway, Tarlac City, Tarlac, Philippines",
+            "phonenumber" : "(045) 982 7045",
+            "weburl" : "https://www.metrobank.com.ph/",
+            "imageurl" : "https://www.metrobank.com.ph/logos/mb-logo-2022.png" 
+        },  
+        {
+            "name" : "Wilcon Depot",
+            "address" : "Mc. Arthur H-way, Sta. Monica Village, San Rafael, Tarlac City",
+            "phonenumber" : "+63 0917 863 3731",
+            "weburl" : "https://wilcon.com.ph/e-news/branch/tarlac/",
+            "imageurl" : "https://wilcon-assets.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2021/07/13065708/wilcon-web-logo.png" 
+        },
+        {
+            "name" : "Pandayan Bookshop",
+            "address" : "City Walk, Zamora Street, Tarlac City, Tarlac",
+            "phonenumber" : "+63 (45) 985 7973",
+            "weburl" : "https://pandayan.com.ph/",
+            "imageurl" : "https://www.dafont.com/forum/attach/orig/5/8/585985.png?1" 
+        },
+        {
+            "name" : "Sutherland",
+            "address" : "IT Park II Ninoy Aquino Highway Barangay Tibag Tarlac City, 2300",
+            "phonenumber" : "+63 (2) 459 2900",
+            "weburl" : "www.sutherlandglobal.com/",
+            "imageurl" : "https://www.sutherlandglobal.com/assets/homepage-2021/assets/img/sutherland-logo-colour.svg" 
+        },   
+        {
+            "name" : "Jollibee",
+            "address" : "G/F Magic Star, along cut-cut 1st, Romulo Blvd, Tarlac City, Tarlac",
+            "phonenumber" : "(045) 628 4192",
+            "weburl" : "https://www.jollibee.com.ph/",
+            "imageurl" : "https://queen.jollibee.com.ph/2022/02/jollibee-logo-footer-2x.png" 
+        },
+        {
+            "name" : "Honda Cars Tarlac Inc.",
+            "address" : "McArthur Highway, Brgy, Santa Cruz, Tarlac City, 2300 Tarlac",
+            "phonenumber" : "+63 0917 561 9995",
+            "weburl" : "https://hondaphil.com/",
+            "imageurl" : "https://hondaphil.com/app/default/assets/addons/default/honda/default2022-theme/resources/images/honda_logo.png?v=1675760423" 
+        },
+        {
+            "name" : "Suzuki Auto Tarlac",
+            "address" : "Mc Arthur highway, Bgy. Maligaya, San Miguel, Tarlac City",
+            "phonenumber" : "+63 0916 587 7062",
+            "weburl" : "https://autodev.suzuki.com.ph/",
+            "imageurl" : "https://autodev.suzuki.com.ph/skin/frontend/suzuki/default/images/suzuki_logo.jpg" 
+        }
+    ]
+}
