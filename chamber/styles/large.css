@@ -130,6 +130,9 @@
     #discover-main div {
         display: flex;
         flex-direction: column;
+        width: 75%;
+        margin: auto;
+        margin-top: 1rem;
     }
     /* --------------------- Join Page --------------------- */
     #business-info-fieldset {
