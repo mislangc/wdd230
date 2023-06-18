@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    border: 1px solid black;
+    margin: 1rem auto;
+    max-width: 40rem;
+    box-shadow: 5px 7px 12px gray;
+    font-size: 100%;
+}
+p, figcaption {
+    font-family: "Montserrat", sans-serif;
+}
+figcaption {
+    color: green;
+}
+h1, h2 {
+    font-family: "Roboto Slab", serif;
+}
