@@ -443,3 +443,12 @@ main div {
 #directory-main div.list section:nth-child(odd) a {
     color: rgb(4, 61, 4);
 }
+
+
+/* ---------------------------credit to openweathermap for the weather status------------------------*/
+#credit-to-open-weather {
+    font-family: "Montserrat", sans-serif;
+}
+#credit-to-open-weather strong {
+    font-family: "Roboto Slab", serif;
+}
