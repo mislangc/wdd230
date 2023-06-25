@@ -18,13 +18,13 @@
     <div id="banner"></div>
     <header>
         <div id="upper-nav">
-            <img id="logo" src="images/site-logo.webp" alt="chamber-site-logo">
+            <a  href="index.html"><img id="logo" src="images/site-logo.webp" alt="chamber-site-logo"></a>
             <nav id="primaryNav">
                 <a id="active" href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </nav>
             <div id="social">
                 <a href="https://web.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook-icon"></a>
@@ -39,10 +39,10 @@
     <main>
         <div id="event">
             <div id="event-title">
-                <h1>Festival</h1>
-                <h2>KanLahi</h2>
+                <h1>Events</h1>
+
             </div>
-            <p><strong>Tarlac</strong> is celebrating the <strong>7th Kanlungan ng Lahi (KanLahi) Festival</strong> which showcases the provinces's culture, traditions and people.</p>
+            <p><strong>Tarlac</strong> is celebrating the <strong>7th Kanlungan ng Lahi (KanLahi) Festival.</strong></p>
             <img src="images/tarlac-kanlahi-festival-picture.jpg" alt="kanlahi-festival-picture">
         </div>
         <div id="weather">
@@ -54,12 +54,12 @@
             <h3>Wind Chill: <span id="wind-chill-value"></span> &#8451;</h3>
         </div>
         <div id="join">
-            <button>Join Us!</button>
+            <button onclick="window.location.href='join.html'">Join Us!</button>
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
         <div id="hero">
             <h1>Welcome to Tarlac</h1>
-            <button>Join the Chamber</button>
+            <button onclick="window.location.href='join.html'">Join the Chamber</button>
             <picture>
                 <source media="(max-width: 34rem)" srcset="images/wdd230-org-small.jpg">
                 <source media="(max-width: 63rem)" srcset="images/wdd230-org-medium.jpg">
@@ -71,33 +71,33 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti voluptate voluptates quae obcaecati dicta, eaque odit suscipit iste non ex corporis quis, excepturi, at tempore dolore impedit dignissimos minus? Distinctio. lo</p>
         </div>
         <div id="spotlights">
-            <div class="spotlight" id="spotlight1">
-                <h1>Shopee</h1>
+        <!--  <div class="spotlight" id="spotlight1">
+                <h1 id="spot1">Shopee</h1>
                 <img src="images/shopee-logo.png" alt="shopee-logo">
-                <h2>"Free Shipping!"</h2>
+                <h2 id="spotdesc1">"Free Shipping!"</h2>
                 <div class="spots-contact-details">
                     <p>shopee@noemailaddress.com</p>
                     <p>+603-2777-9222 | shopee.ph</p>
                 </div>
             </div>
             <div class="spotlight" id="spotlight2">
-                <h1>Kumon</h1>
+                <h1 id="spot2">Kumon</h1>
                 <img src="images/kumon-logo.png" alt="kumon-logo">
-                <h2>"We accelerate your children's learning"</h2>
+                <h2 id="spotdesc2">"We accelerate your children's learning"</h2>
                 <div class="spots-contact-details">
                     <p>kumon.tarlac@gmail.com</p>
                     <p>+63 918 964 9007 | kumon.com</p>
                 </div>
             </div>
             <div class="spotlight" id="spotlight3">
-                <h1>Capas Shrine</h1>
+                 <h1 id="spot3">Capas Shrine</h1>
                 <img src="images/tarlac-capas-shrine.png" alt="capas-shrine-screenshot">
-                <h2>Hall of Heroes</h2>
+                <h2 id="spotdesc3">Hall of Heroes</h2>
                 <div class="spots-contact-details">
                     <p>capasshrine@noemailaddress.com</p>
                     <p>+000-0000-0000 | Website</p>
-                </div>
-            </div>
+                </div> 
+            </div> -->
         </div>
     </main>
     <footer>
@@ -121,5 +121,6 @@
     </footer>
 <script src="scripts/index.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/spotlights.js"></script>
 </body>
 </html>

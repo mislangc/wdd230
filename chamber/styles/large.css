@@ -117,13 +117,13 @@
     /*spotlights div*/
 
     #spotlights {
-        width: min-content;
+        
     }
-    .spotlight h2 {
-        font-size: .9rem;
+    .spotlight h3 {
+        
     }
     #spotlight1 img {
-        width: 25%;
+        
     }
     
     /*Discover Page*/
@@ -159,5 +159,11 @@
     }
     #directory-main div.list section p:nth-child(4) {
         text-align: center;
+    }
+    /*-------------------------Contact Page-----------------------*/
+    #contact-main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }

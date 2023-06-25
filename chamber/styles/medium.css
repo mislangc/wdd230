@@ -11,9 +11,7 @@
         width: 40%;
     }
     #logo {
-        margin-left: 5em;
-        margin-top: 2em;
-        margin-right: 2em;
+        margin: 1rem;
     }
     /*main*/
     #join {

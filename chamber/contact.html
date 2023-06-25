@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover page of the Chamber of Commerce site by Carl Mislang WDD230">
-    <title>Discover</title> 
+    <meta name="description" content="Chamber of Commerce Project by Carl Mislang WDD 230">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Tarlac Chamber</title>
 </head>
 <body>
     <div id="banner"></div>
@@ -20,9 +22,9 @@
             <nav id="primaryNav">
                 <a href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
-                <a id="active" href="directory.html">Directory</a>
+                <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
-                <a href="contact.html">Contact</a>
+                <a id="active" href="contact.html">Contact</a>
             </nav>
             <div id="social">
                 <a href="https://web.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook-icon"></a>
@@ -34,13 +36,29 @@
         <div id="date-today">
         </div>
     </header>
-    <main id="directory-main">
-        <h1>Business Directory</h1>
-        <div id="menu">
-            <button id="grid-button">Grid</button>
-            <button id="list-button">List</button>
+    <main id="contact-main">
+        <div id="contact-us-info">
+            <h1>Contact Us</h1>
+            <h2>Address</h2>
+            <p>Tarlac Chamber Of Commerce</p>
+            <p>West Covina Heights</p>
+            <p>Tarlac City, Philippines</p>
+            <h2>Phone</h2>
+            <p>+63-912-345-6789</p>
+            <h2>Email</h2>
+            <p>chamber@tarlaccc.org</p>
         </div>
-        <div id="company-cards" class="grid"></div>
+        <form method="get" action="thankyouquestionconcern.html">
+            <fieldset>
+                <h1>Send a Question/Concern</h1>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Cell Phone Number*<input type="tel" name="celnum" placeholder="09123456789" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="emailname@gmail.com" required></label>
+                <label class="top" for="questionconcern">Question/Concern*<textarea id="questionconcern" name="questionconcern" rows="4" cols="50" required></textarea></label>
+                <input class="submitBtn" type="submit" value="Send Question/Concern">
+            </fieldset>
+        </form>
     </main>
     <footer>
         <div id="upper-footer">
@@ -61,6 +79,5 @@
         </div>
     </footer>
 <script src="scripts/index.js"></script>
-<script src="scripts/directory.js"></script>
 </body>
 </html>
