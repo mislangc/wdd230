@@ -481,8 +481,8 @@ main div {
 #contact-main fieldset {
     border-radius: 4px;
     border: 1px solid green;
-    margin: 2rem 2%;
-    padding: 1rem 1rem;
+    margin: 8px;
+    padding: 2%;
 }
 
 #contact-main form label.top input, #contact-main form fieldset textarea {
@@ -493,8 +493,8 @@ main div {
     border-radius: 4px;
     border: 1px solid #999;
     background-color: rgb(0,0,0,.1);
-    width: 90%;
-    max-width: 20rem;
+    width: 100%;
+    max-width: 18rem;
     font-family: "Montserrat", sans-serif;
 }
 #contact-main form input.submitBtn {
@@ -503,9 +503,9 @@ main div {
     font-family: "Roboto Slab", serif;
     border-radius: 1rem;
     width: 96%;
-    max-width: 22rem;
+    max-width: 20rem;
     font-weight: bold;
-    padding: .75rem 5rem;
+    padding: 1rem;
     margin-top: .8rem;
 }
 #contact-main form label.top {
