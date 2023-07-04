@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+}
+h1 {
+    font-family: "Bangers", serif;
+    letter-spacing: .5rem;
+    background-color: rgb(182, 231, 107);
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+}
+h2 {
+    font-family: "Roboto Slab", sans-serif;
+}
+h3, h4, p, a {
+    font-family: "Montserrat", sans-serif;
+}
+p {
+    padding: 1rem;
+    width: 80%;
+    margin: 1rem auto;   
+}
+#color-scheme {
+    display: flex;
+    padding: 1rem;
+}
+#color-scheme p {
+    margin: 1rem;
+}
+#lime {
+    background-color: rgb(182, 231, 107);
+    border: 1px solid darkgreen;
+}
+#skyblue {
+    background-color: skyblue;
+}
+#black {
+    background-color: black;
+    color: white;
+}
+#white {
+    border: 1px solid darkgreen;
+}
+#darkgreen {
+    background-color: darkgreen;
+    color: white;
+}
+#colored-para-lime {
+    background-color: rgb(182, 231, 107);
+}
+#colored-para-skyblue {
+    background-color: skyblue;
+}
+#bangers {
+    font-family: "Bangers", sans-serif;
+    font-size: 2rem;
+}
+#roboto-slab {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 2rem;
+}
+#montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+}
+#sans-serif {
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+nav {
+    background-color: rgb(182, 231, 107);
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+}
+nav a {
+    padding: 1rem;
+}
+#active {
+    background-color: darkgreen;
+    color: white;
+}
+nav a:hover {
+    background-color: skyblue;
+    color: black;
+}
