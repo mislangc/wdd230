@@ -22,10 +22,10 @@ p {
 }
 #color-scheme {
     display: flex;
-    padding: 1rem;
+    flex-direction: column;
 }
 #color-scheme p {
-    margin: 1rem;
+    max-width: 20rem;
 }
 #lime {
     background-color: rgb(182, 231, 107);
@@ -69,7 +69,8 @@ p {
 }
 nav {
     background-color: rgb(182, 231, 107);
-    width: 50%;
+    width: 100%;
+    max-width: 20rem;
     margin: auto;
     padding: 1rem;
 }
@@ -83,4 +84,16 @@ nav a {
 nav a:hover {
     background-color: skyblue;
     color: black;
+}
+#small-view {
+    width: 100%;
+    max-width: 20rem;
+}
+#medium-view {
+    width: 100%;
+    max-width: 25rem;
+}
+#large-view {
+    width: 100%;
+    max-width: 30rem;
 }
