@@ -1,0 +1,255 @@
+/*--------------------------------------- Home page ----------------------------------*/
+/* ------------------------ HEADER ---------------------------*/
+#site-logo {
+    grid-area: logo;
+}
+#twitter {
+    grid-area: twitter;
+}
+#facebook {
+    grid-area: facebook;
+}
+#linkedin {
+    grid-area: linkedin;
+}
+#instagram  {
+    grid-area: instagram;
+}
+.social {
+    width: 25%;
+}
+#upper-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#upper-nav {
+    grid-gap: 6px;
+    display: grid;
+    grid-template-areas: 
+    "facebook logo linkedin"    
+    "twitter logo instagram";
+}
+nav {
+    background-color: rgb(182, 231, 107);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+    padding: 1rem;
+    color: darkgreen;
+    font-family: "Montserrat", sans-serif;
+}
+#active {
+    background-color: green;
+    color: white;
+}
+/* -------------------------- MAIN ---------------------------- */
+#home-main h1 {
+    font-family: "Bangers", serif;
+    text-align: center;
+}
+#home-main p, #home-main h2, #home-main h3 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+#hero {
+    width: 100%;
+}
+#coastal-areas {
+    background-color: skyblue;
+    padding: 1rem;
+}
+.coast {
+    width: 90%;
+    margin: 1rem auto;
+    display: block;
+}
+#weather img {
+    display: block;
+    margin: 0 auto;
+    background-color: orange;
+    border-radius: 50%;
+}
+#three-day-forecast {
+    display: flex;
+    justify-content: space-around;
+}
+#three-day-forecast h3 {
+    width: 6rem;
+    padding: .5rem;
+
+}
+#mixing-title {
+    background-color: rgb(182, 231, 107);
+    padding-top: 1rem;
+}
+#mixing-title p {
+    padding: .5rem;
+}
+#mixing-div {
+    position: relative;
+}
+#fruits-variety {
+    padding: 1rem;
+    background-color: rgb(182, 231, 107);
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+#fruits-variety img {
+    width: 100%;
+}
+#mix-your-juice {
+    width: 100%;
+    border-radius: 0 0 50% 50%;
+    background-color: rgb(182, 231, 107);
+}
+#mix-button {
+    position: absolute;
+    width: 50%;
+    background-color: yellowgreen;
+    color: black;
+    letter-spacing: 6px;
+    font-size: 200%;
+    top: 9%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: .5rem;
+    font-family: "Bangers", serif;
+}
+#qty-ordered {
+    background-color: rgb(182, 231, 107);
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 20rem;
+    box-shadow: 5px 5px 10px darkgreen;
+}
+/* ---------------------- FOOTER ----------------------- */
+#upper-footer #logo {
+    display: none;
+}
+footer h1 {
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+footer p {
+    font-family: "Montserrat", sans-serif;
+}
+#upper-left-footer div {
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-between;
+}
+#google-map {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    filter: invert(100%);
+}
+#modified {
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+/*--------------------------------------- About Us page ----------------------------------*/
+/* ------------------------ Main ---------------------------*/
+#about-us-main {
+    text-align: center;
+}
+#about-us-main h1 {
+    font-family: "Roboto Slab", sans-serif;
+}
+#about-us-main p {
+    font-family: "Montserrat", serif;
+    padding: 1rem;
+}
+#about-us-main img {
+    width: 85%;
+    margin: .5rem;
+}
+#interactive-desc {
+    background-color: rgb(182, 231, 107);
+}
+#about-us-main button {
+    position: relative;
+    width: 75%;
+}
+/*-------------------------------Fresh Page-------------------------------------------*/
+/*-------------------------Main-------------------------------*/
+#fresh-main form {
+    width: 100%;
+}
+#fresh-main h1 {
+    font-family: "Bangers", sans-serif;
+    text-align: center;
+}
+#fresh-main p {
+    font-family: "Montserrat", sans-serif;
+}
+#fresh-main button {
+    font-family: "Bangers", serif;
+    width: 90%;
+    max-width: 20rem;
+    background-color: yellowgreen;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 100%;
+    margin-left: 1rem;
+    padding: .5rem; 
+}
+#fresh-main fieldset legend {
+    font-family: "Roboto Slab", serif;
+    padding: .5rem;
+}
+#fresh-main form fieldset {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+#fresh-main .top {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    margin-top: .5rem;
+}
+#fresh-main .top input {
+    padding: .5rem;
+    background-color: rgb(211, 211, 211);
+}
+#fresh-main .top input, #fresh-main .top textarea {
+    display: block;
+}
+
+#three-fruit-selection input {
+    max-width: 2rem;
+}
+#form-fruit-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+}
+#show-customer-order {
+    width: 70%;
+    margin: 1rem auto;
+    border: 1px solid black;
+    padding: 1rem;
+    display: none;
+}
+#show-customer-order button {
+    margin: auto;
+}
+#submit-button {
+    display: none;
+}
+#qty-ordered {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+/*-----------------------------Thank you page------------------------*/
+#thank-you-main p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}

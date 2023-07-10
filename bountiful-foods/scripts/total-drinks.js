@@ -1,0 +1,1 @@
+document.querySelector("#total-orders").textContent = localStorage.getItem("totalOrders");

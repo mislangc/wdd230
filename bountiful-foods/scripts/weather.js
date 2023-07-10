@@ -1,0 +1,76 @@
+const url = "https://api.openweathermap.org/data/2.5/forecast?q=carlsbad&appid=f458f91929bcdd3aba4635302a2c1ae2";
+
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayWeather(data);
+
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch();
+
+function displayWeather(data) {
+    const weather = document.querySelector("#weather");
+
+    const weatherTop = document.createElement("div");
+
+    const temp = document.createElement("h2");
+    const desc = document.createElement("h3");
+    const humi = document.createElement("h3");
+    const weatherIcon = document.createElement("img");
+
+    const weatherBottom = document.createElement("div");
+
+    /* and a 3 day temperature forecast.*/
+    const threeDayForecast = document.createElement("div");
+
+    const threeDayTitle = document.createElement("h2");
+
+    const forecastOne = document.createElement("h3");
+    const forecastTwo = document.createElement("h3");
+    const forecastThree = document.createElement("h3");
+
+    const iconSrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
+
+    temp.innerHTML = `Temperature: ${data.list[0].main.temp} &#8457;`;
+    desc.innerHTML = `${(data.list[0].weather[0].description).toUpperCase()}`;
+    humi.textContent = `Humidity: ${data.list[0].main.humidity}%`;
+    
+    weatherIcon.setAttribute("src", iconSrc);
+    weatherIcon.setAttribute("alt", "photo of the current weather");
+
+    threeDayTitle.textContent = "3 day temperature forecast";
+
+    forecastOne.innerHTML = `Tomorrow ${data.list[8].main.temp} &#8457;`;
+    forecastTwo.innerHTML = `2nd Day ${data.list[16].main.temp} &#8457;`;
+    forecastThree.innerHTML = `3rd Day ${data.list[24].main.temp} &#8457;`;
+
+    threeDayForecast.setAttribute("id", "three-day-forecast");
+
+    weatherTop.appendChild(temp);
+    weatherTop.appendChild(weatherIcon);
+    weatherTop.appendChild(desc);
+    weatherTop.appendChild(humi);
+
+    threeDayForecast.appendChild(forecastOne);
+    threeDayForecast.appendChild(forecastTwo);
+    threeDayForecast.appendChild(forecastThree);
+
+    weatherBottom.appendChild(threeDayTitle);
+    weatherBottom.appendChild(threeDayForecast);
+
+    weatherTop.setAttribute("id","weather-top");
+    weatherBottom.setAttribute("id","weather-bottom");
+
+    weather.appendChild(weatherTop);
+    weather.appendChild(weatherBottom);
+}

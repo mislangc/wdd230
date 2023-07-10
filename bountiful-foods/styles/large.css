@@ -1,0 +1,89 @@
+@media only screen and (min-width: 64rem) {
+    /*---------------Header-------------------*/
+    #upper-nav {
+        grid-template-areas: 
+        "logo logo logo logo facebook instagram"
+        "logo logo logo logo linkedin twitter";
+    }
+    .social {
+        width: 25%;
+    }
+    #facebook img, #linkedin img {
+        margin-left: auto;
+    }
+    #facebook img, #instagram img {
+        margin-top: auto;
+    } 
+    #twitter img, #instagram img {
+        margin-right: auto;
+    }
+    #linkedin img, #twitter img {
+        margin-bottom: auto;
+    } 
+    /*------------------------Main------------------------*/
+    #coastal-coasts {
+        display: block;
+    }
+    .coasts {
+        display: flex;
+    }
+    .coasts .coast {
+        width: 50%;
+        border-radius: 50%;
+    }
+    .coasts:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .coasts div {
+        margin: auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #mix-your-juice {
+        border-radius: 0;
+        width: 100%;
+    }
+    #mix-button {
+        top: 40%;
+        width: 50%;
+    }
+    #mixing-div {
+        width: 100%;
+        margin: auto;
+    }
+    #qty-ordered {
+        top: 54%;
+    }
+    /*------------------------Footer--------------------*/
+    #upper-footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #upper-footer #logo{
+        display: block;
+    }
+    #logo img {
+        display: block;
+        margin: auto;
+        margin-top: 2rem;
+        width: 60%;
+    }
+    #upper-left-footer div {
+        flex-direction: column;
+        text-align: center;
+    }
+    /*----------------------Fresh Page-----------------------*/
+    #fresh-main fieldset {
+        margin: 2rem;
+    }
+    #fresh-main button {
+        font-size: 200%;
+    }
+    #place-order-button button {
+        margin-left: 2rem;
+        max-width: 30rem;
+    }
+    #show-customer-order {
+        width: 50%;
+    }
+    
+}

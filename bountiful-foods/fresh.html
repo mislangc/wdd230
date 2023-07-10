@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!--Replace Favicon soon-->
+    <link rel="icon" href="images/bountiful-foods-logo-resize.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods website Project by Carl Mislang WDD 230">
+    <title>Bountiful Foods</title>
+</head>
+<body>
+    <header>
+        <div id="upper-nav">
+            <a href="index.html" id="site-logo"><img class="logo" src="images/bountiful-foods-logo-resize.png" alt="logo of bountiful foods"></a>
+            <a href="https://facebook.com" id="facebook" target="_blank"><img class="social" src="images/facebook.png" alt="logo and link of facebook"></a>
+            <a href="https://twitter.com" id="twitter" target="_blank"><img class="social" src="images/twitter.png" alt="logo and link of twitter"></a>
+            <a href="https://linked.com" id="linkedin" target="_blank"><img class="social" src="images/linkedin.png" alt="logo and link of linkedin"></a>
+            <a href="https://instagram.com" id="instagram" target="_blank"><img class="social" src="images/instagram.png" alt="logo and link of instagram"></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a id="active" href="fresh.html">Fresh</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+    <main id="fresh-main">
+        <h1>Choose Your Mix!</h1>
+        <form>
+            <fieldset>
+                <legend>Customer Info</legend>
+                <label class="top">First Name*<input type="text" name="fname" id="fname" required></label>
+                <label class="top">Email*<input type="email" name="email" id="email" placeholder="emailname@gmail.com" required></label>
+                <label class="top">Phone Number*<input type="tel" name="celnum" id="phonum" placeholder="+63 9123456789" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Customer Order</legend>
+                <p>Select up to <strong>(3) fruits</strong> of your own selection. (Input the corresponding <strong>id number</strong> of your selected fruit)</p>
+                <div id="three-fruit-selection">
+                    <label class="top">First fruit*<input type="text" name="ffruit" id="ffruit" required></label>
+                    <label class="top">Second fruit<input type="text" name="sfruit" id="sfruit"></label>
+                    <label class="top">Third fruit<input type="text" name="tfruit" id="tfruit"></label>
+                </div>
+                <div id="form-fruit-selection">
+                    <p>6 - Apple</p>
+                    <p>35 - Apricot</p>
+                    <p>84 - Avocado</p>
+                    <p>1 - Banana</p>
+                    <p>64 - Blackberry</p>
+                    <p>33 - Blueberry</p>
+                    <p>9 - Cherry</p>
+                    <p>80 - Dragonfruit</p>
+                    <p>60 - Durian</p>
+                    <p>76 - Feijoa</p>
+                    <p>68 -Fig</p>
+                    <p>69 - Gooseberry</p>
+                    <p>81 - Grape</p>
+                    <p>47 - Grapes</p>
+                    <p>72 - Green Apple</p>
+                    <p>37 - Guava</p>
+                    <p>66 - Kiwi</p>
+                    <p>85 - Kiwifruit</p>
+                    <p>26 - Lemon</p>
+                    <p>44- Lime</p>
+                    <p>65 - Lingonberry</p>
+                    <p>67 - Lychee</p>
+                    <p>27 - Mango</p>
+                    <p>41 - Melon</p>
+                    <p>82 - Morus</p>
+                    <p>2 - Orange</p>
+                    <p>42 - Papaya</p>
+                    <p>70 - Passionfruit</p>
+                    <p>4 - Pear</p>
+                    <p>52 - Persimmon</p>
+                    <p>10 - Pineapple</p>
+                    <p>78 - Pitahaya</p>
+                    <p>71 - Plum</p>
+                    <p>79 - Pomegranate</p>
+                    <p>23 - Raspberry</p>
+                    <p>3 - Strawberry</p>
+                    <p>77 - Tangerine</p>
+                    <p>5 - Tomato</p>
+                    <p>25 - Watermelon</p>
+                </div>
+                <label class="top" for="instructions">Special Instructions to make your drink(optional)<textarea id="instructions" name="instructions" id="special-inst" rows="4" cols="32"></textarea></label>
+            </fieldset>
+        </form>
+        <div id="place-order-button">
+            <button id="place-order">Place Order</button>
+        </div>
+        <div id="show-customer-order">
+            <p id="output-name"></p>
+            <p id="output-email"></p>
+            <p id="output-phone"></p>
+            <p id="output-fruits"><span id="output-first-fruit"></span><span id="output-second-fruit"></span><span id="output-third-fruit"></span></p>
+            <p id="output-instructions"></p>
+            <p id="output-carbohydrates"></p>
+            <p id="output-protein"></p>
+            <p id="output-fat"></p>
+            <p id="output-sugar"></p>
+            <p id="output-calories"></p>
+            <p id="output-date"></p>
+            <a href="thank-you.html">
+                <button id="submit-button">Confirm & Submit Order</button>
+            </a>
+        </div>
+        <div id="qty-ordered">
+            <p>Total Drink Orders from Bountiful Foods</p>
+           <p>🍹<span id="total-orders">0</span></p>
+        </div>
+    </main>
+    <footer>
+        <h1>Contact Us</h1>
+        <div id="upper-footer">
+            <div id="logo">
+                <a href="index.html"><img class="logo" src="images/bountiful-foods-logo-resize.png" alt="logo of bountiful foods"></a>
+            </div>
+            <div id="upper-left-footer">
+                <div>
+                    <p>Location</p>
+                    <p><strong>Carlsbad, California</strong></p>
+                </div>
+                <div>
+                    <p>Phone</p>
+                    <p><strong>+63 912 345 6789</strong></p>
+                </div>
+                <div>
+                    <p>Email</p>
+                    <p><strong>fruits@bountifulfood.com</strong></p>
+                </div>
+            </div>
+            <div id="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.89382732724!2d-117.37020434803995!3d33.12149243295895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA%2C%20USA!5e0!3m2!1sen!2sph!4v1688341008766!5m2!1sen!2sph" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div>
+            <p id="modified">&copy;2023 Bountiful Foods | </p>
+        </div>
+    </footer>
+<script src="scripts/index.js"></script>
+<script src="scripts/fresh.js"></script>
+<script src="scripts/total-drinks.js"></script>
+</body>
+</html>

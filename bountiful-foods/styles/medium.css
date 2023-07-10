@@ -1,0 +1,38 @@
+@media only screen and (min-width: 35rem) {
+    #upper-nav {
+        grid-template-areas: 
+        "logo logo logo logo facebook instagram twitter linkedin";
+    }
+    .social {
+        width: 40%;
+    }
+    #home-main p {
+        width: 50%;
+        margin: 1rem auto;
+    }
+    #coastal-coasts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #coastal-coasts p {
+        width: 100%;
+    }
+    #weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*----------------------Footer--------------------------*/
+    #upper-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #upper-left-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #google-map iframe{
+        width: 100%;
+    }
+}
