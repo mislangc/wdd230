@@ -85,5 +85,12 @@
     #show-customer-order {
         width: 50%;
     }
-    
+    /*-------------------About Us Page--------------------------*/
+    #about-us-main p, #about-us-main button {
+        width: 50%;
+        margin: auto;
+    }
+    #about-us-main img {
+        width: 40%;
+    }
 }

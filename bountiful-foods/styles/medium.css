@@ -35,4 +35,20 @@
     #google-map iframe{
         width: 100%;
     }
+    /*-------------------About Us Page--------------------------*/
+    #about-us-main img {
+        width: 60%;
+    }
+    #farmers-photos img {
+        width: 40%;
+        display: inline-block;
+    }
+    #interactive-desc {
+        width: 70%;
+        margin: auto;
+    }
+    #about-us-main button {
+        position: relative;
+        width: 75%;
+    }
 }
