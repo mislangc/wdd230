@@ -241,6 +241,9 @@ footer p {
 #show-customer-order button {
     margin: auto;
 }
+#show-customer-order a {
+    text-decoration: none;
+}
 #submit-button {
     display: none;
 }

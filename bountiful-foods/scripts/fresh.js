@@ -113,13 +113,16 @@ function outputOrder(prutas) {
 document.querySelector("#submit-button").addEventListener("click", submitOrder);
 
 function submitOrder() {
-    if (typeof(localStorage.getItem("totalOrders")) == null) {
-        localStorage.setItem("totalOrders", 1);
-  }
-  else {
-    let totalOrders = localStorage.getItem("totalOrders");
-    let toInt = parseInt(totalOrders);
-    toInt += 1;
-    localStorage.setItem("totalOrders", toInt);
-  }
+    let totalOrdersStorage = localStorage.getItem("totalOrders");
+    console.log(totalOrdersStorage);
+    if (totalOrdersStorage === null) {
+        let value = 1;
+        document.querySelector("#total-orders").textContent = value;
+        localStorage.setItem("totalOrders", value);
+    }
+    else {
+        let toInt = parseInt(totalOrdersStorage);
+        toInt += 1;
+        localStorage.setItem("totalOrders", toInt);
+    }
 };
