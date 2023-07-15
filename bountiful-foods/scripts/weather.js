@@ -27,6 +27,9 @@ function displayWeather(data) {
     const desc = document.createElement("h3");
     const humi = document.createElement("h3");
     const weatherIcon = document.createElement("img");
+    const weatherIconTom = document.createElement("img");
+    const weatherIcon2nd = document.createElement("img");
+    const weatherIcon3rd = document.createElement("img");
 
     const weatherBottom = document.createElement("div");
 
@@ -40,6 +43,9 @@ function displayWeather(data) {
     const forecastThree = document.createElement("h3");
 
     const iconSrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
+    const iconSrcTom = `https://openweathermap.org/img/w/${data.list[8].weather[0].icon}.png`;
+    const iconSrc2nd = `https://openweathermap.org/img/w/${data.list[16].weather[0].icon}.png`;
+    const iconSrc3rd = `https://openweathermap.org/img/w/${data.list[24].weather[0].icon}.png`;
 
     temp.innerHTML = `Temperature: ${data.list[0].main.temp} &#8457;`;
     desc.innerHTML = `${(data.list[0].weather[0].description).toUpperCase()}`;
@@ -47,6 +53,12 @@ function displayWeather(data) {
     
     weatherIcon.setAttribute("src", iconSrc);
     weatherIcon.setAttribute("alt", "photo of the current weather");
+    weatherIconTom.setAttribute("src", iconSrcTom);
+    weatherIconTom.setAttribute("alt", "photo of the tomorrow's weather");
+    weatherIcon2nd.setAttribute("src", iconSrc2nd);
+    weatherIcon2nd.setAttribute("alt", "photo of the the day after tomorrow's weather");
+    weatherIcon3rd.setAttribute("src", iconSrc3rd);
+    weatherIcon3rd.setAttribute("alt", "photo of the the day after that weather");
 
     threeDayTitle.textContent = "3 day temperature forecast";
 
@@ -55,6 +67,10 @@ function displayWeather(data) {
     forecastThree.innerHTML = `3rd Day ${data.list[24].main.temp} &#8457;`;
 
     threeDayForecast.setAttribute("id", "three-day-forecast");
+
+    forecastOne.appendChild(weatherIconTom);
+    forecastTwo.appendChild(weatherIcon2nd);
+    forecastThree.appendChild(weatherIcon3rd);
 
     weatherTop.appendChild(temp);
     weatherTop.appendChild(weatherIcon);

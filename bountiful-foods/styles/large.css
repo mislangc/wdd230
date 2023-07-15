@@ -21,6 +21,22 @@
         margin-bottom: auto;
     } 
     /*------------------------Main------------------------*/
+    #hero-div {
+        position: relative;
+    }
+    #hero-title {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10%;
+        color: darkgreen;
+        -webkit-text-stroke: 1px rgb(6, 48, 6);
+        font-size: 5rem;
+        letter-spacing: .5rem;
+        width: 50%;
+        margin: auto;
+    }
     #coastal-coasts {
         display: block;
     }
@@ -39,17 +55,22 @@
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    #mix-your-juice {
-        border-radius: 0;
-        width: 100%;
+    #mix-your-juice, #mix-your-juice-rotated {
+        border-radius: 0 0 0 0;
+        display: block;
+        margin: auto;
+        width: 40%;
+        background-color: transparent;
     }
     #mix-button {
         top: 40%;
-        width: 50%;
+        width: 25%;
     }
     #mixing-div {
+        display: flex;
         width: 100%;
         margin: auto;
+        background-color: darkorange;
     }
     #qty-ordered {
         top: 54%;

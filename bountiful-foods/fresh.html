@@ -16,11 +16,11 @@
 <body>
     <header>
         <div id="upper-nav">
-            <a href="index.html" id="site-logo"><img class="logo" src="images/bountiful-foods-logo-resize.png" alt="logo of bountiful foods"></a>
-            <a href="https://facebook.com" id="facebook" target="_blank"><img class="social" src="images/facebook.png" alt="logo and link of facebook"></a>
-            <a href="https://twitter.com" id="twitter" target="_blank"><img class="social" src="images/twitter.png" alt="logo and link of twitter"></a>
-            <a href="https://linked.com" id="linkedin" target="_blank"><img class="social" src="images/linkedin.png" alt="logo and link of linkedin"></a>
-            <a href="https://instagram.com" id="instagram" target="_blank"><img class="social" src="images/instagram.png" alt="logo and link of instagram"></a>
+            <a href="index.html" id="site-logo"><img class="logo" src="images/bountiful-foods-logo-resize.png" alt="logo of bountiful foods" loading="lazy"></a>
+            <a href="https://facebook.com" id="facebook" target="_blank"><img class="social" src="images/facebook.png" alt="logo and link of facebook" loading="lazy"></a>
+            <a href="https://twitter.com" id="twitter" target="_blank"><img class="social" src="images/twitter.png" alt="logo and link of twitter" loading="lazy"></a>
+            <a href="https://linked.com" id="linkedin" target="_blank"><img class="social" src="images/linkedin.png" alt="logo and link of linkedin" loading="lazy"></a>
+            <a href="https://instagram.com" id="instagram" target="_blank"><img class="social" src="images/instagram.png" alt="logo and link of instagram" loading="lazy"></a>
         </div>
         <nav>
             <a href="index.html">Home</a>
@@ -86,7 +86,7 @@
                     <p>5 - Tomato</p>
                     <p>25 - Watermelon</p>
                 </div>
-                <label class="top" for="instructions">Special Instructions to make your drink(optional)<textarea id="instructions" name="instructions" id="special-inst" rows="4" cols="32"></textarea></label>
+                <label class="top" for="instructions">Special Instructions to make your drink(optional)<textarea id="instructions" name="instructions" rows="4" cols="32"></textarea></label>
             </fieldset>
         </form>
         <div id="place-order-button">
@@ -104,9 +104,7 @@
             <p id="output-sugar"></p>
             <p id="output-calories"></p>
             <p id="output-date"></p>
-            <a href="thank-you.html">
-                <button id="submit-button">Confirm & Submit Order</button>
-            </a>
+            <button onclick="window.location.href='thank-you.html'" id="submit-button">Confirm & Submit Order</button>
         </div>
         <div id="qty-ordered">
             <p>Total Drink Orders from Bountiful Foods</p>
@@ -117,7 +115,7 @@
         <h1>Contact Us</h1>
         <div id="upper-footer">
             <div id="logo">
-                <a href="index.html"><img class="logo" src="images/bountiful-foods-logo-resize.png" alt="logo of bountiful foods"></a>
+                <a href="index.html"><img class="logo" src="images/bountiful-foods-logo-resize.png" alt="logo of bountiful foods" loading="lazy"></a>
             </div>
             <div id="upper-left-footer">
                 <div>
@@ -138,6 +136,7 @@
             </div>
         </div>
         <div>
+            <p id="credit-openweathermap">Weather update source: <a href="https://openweathermap.org/city/5460459">openweathermap</a></p>
             <p id="modified">&copy;2023 Bountiful Foods | </p>
         </div>
     </footer>

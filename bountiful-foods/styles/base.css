@@ -58,6 +58,9 @@ nav a{
 #hero {
     width: 100%;
 }
+#hero-title {
+    display: none;
+}
 #coastal-areas {
     background-color: skyblue;
     padding: 1rem;
@@ -91,6 +94,9 @@ nav a{
 }
 #mixing-div {
     position: relative;
+}
+#mix-your-juice-rotated {
+    display: none;
 }
 #fruits-variety {
     padding: 1rem;
@@ -154,6 +160,9 @@ footer p {
 #modified {
     justify-content: center;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+#credit-openweathermap {
     text-align: center;
 }
 /*--------------------------------------- About Us page ----------------------------------*/
@@ -240,9 +249,6 @@ footer p {
 }
 #show-customer-order button {
     margin: auto;
-}
-#show-customer-order a {
-    text-decoration: none;
 }
 #submit-button {
     display: none;
