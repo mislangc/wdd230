@@ -1,4 +1,4 @@
-const url = "https://api.openweathermap.org/data/2.5/forecast?q=carlsbad&appid=f458f91929bcdd3aba4635302a2c1ae2";
+const url = "https://api.openweathermap.org/data/2.5/forecast?q=carlsbad&units=imperial&appid=f458f91929bcdd3aba4635302a2c1ae2";
 
 async function apiFetch() {
     try {
